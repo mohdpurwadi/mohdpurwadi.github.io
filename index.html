@@ -123,47 +123,37 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient text-white py-20 md:py-32">
+    <section
+      id="home"
+      class="hero flex items-center justify-center text-center text-white h-screen bg-cover bg-center"
+      style="
+        background-image: url('./Hero.jpg'),
+          linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+      "
+    >
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 mb-12 md:mb-0">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">
-              Hi, I'm Mohd Purwadi
-            </h1>
-            <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-indigo-200">
-              Full-Stack Web Developer
-            </h2>
-            <p class="text-lg md:text-xl mb-8 max-w-lg">
-              I build exceptional digital experiences with modern web
-              technologies. Focused on creating clean, efficient, and
-              user-friendly applications.
-            </p>
-            <div class="flex space-x-4">
-              <a
-                href="#contact"
-                class="bg-white hover:bg-gray-100 text-indigo-600 px-6 py-3 rounded-full font-bold transition duration-300"
-              >
-                Contact Me
-              </a>
-              <a
-                href="#projects"
-                class="border-2 border-white hover:bg-white hover:bg-opacity-10 text-white px-6 py-3 rounded-full font-bold transition duration-300"
-              >
-                View Projects
-              </a>
-            </div>
-          </div>
-          <div class="md:w-1/2 flex justify-center">
-            <div
-              class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl"
-            >
-              <img
-                src="profile.jpg"
-                alt="Mohd Purwadi"
-                class="w-full h-full object-cover"
-              />
-            </div>
-          </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Hi, I'm
+          <span class="text-blue-400"> Mohd Purwadi</span>
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-indigo-200">
+          Full-Stack Web Developer
+        </h2>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+          I build exceptional digital experiences with modern web technologies.
+          Focused on creating clean, efficient, and user-friendly applications.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#contact"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"
+            >Hubungi Kami</a
+          >
+          <a
+            href="#services"
+            class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-bold py-3 px-8 border-2 border-white rounded-full transition duration-300 transform hover:scale-105"
+            >Our Services</a
+          >
         </div>
       </div>
     </section>
