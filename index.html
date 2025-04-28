@@ -20,43 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      .hero-gradient {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      }
-      .skill-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-      }
-      .project-card:hover {
-        transform: scale(1.02);
-      }
-      .nav-link {
-        position: relative;
-      }
-      .nav-link:after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -2px;
-        left: 0;
-        background-color: #4f46e5;
-        transition: width 0.3s ease;
-      }
-      .nav-link:hover:after {
-        width: 100%;
-      }
-      .timeline-item:not(:last-child):after {
-        content: "";
-        position: absolute;
-        left: 16px;
-        top: 30px;
-        height: calc(100% - 30px);
-        width: 2px;
-        background: #e5e7eb;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="font-sans text-gray-800 bg-gray-50">
     <!-- Navigation -->
@@ -67,9 +31,9 @@
             <div
               class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg"
             >
-              JD
+              MP
             </div>
-            <span class="ml-3 text-xl font-bold">John Doe</span>
+            <span class="ml-3 text-xl font-bold">Mohd Purwadi</span>
           </div>
 
           <!-- Mobile menu button -->
@@ -164,7 +128,7 @@
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-12 md:mb-0">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">
-              Hi, I'm John Doe
+              Hi, I'm Mohd Purwadi
             </h1>
             <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-indigo-200">
               Full-Stack Web Developer
@@ -194,8 +158,8 @@
               class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl"
             >
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-                alt="John Doe"
+                src="profile.jpg"
+                alt="Mohd Purwadi"
                 class="w-full h-full object-cover"
               />
             </div>
@@ -213,8 +177,8 @@
               class="w-64 h-64 rounded-full overflow-hidden border-4 border-indigo-100 shadow-lg"
             >
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-                alt="John Doe"
+                src="profile.jpg"
+                alt="Mohd Purwadi"
                 class="w-full h-full object-cover"
               />
             </div>
@@ -755,7 +719,7 @@
                     id="name"
                     name="name"
                     class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
-                    placeholder="John Doe"
+                    placeholder="Mohd Purwadi"
                     required
                   />
                 </div>
@@ -826,9 +790,9 @@
               <div
                 class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold"
               >
-                JD
+                MP
               </div>
-              <span class="ml-3 text-xl font-bold">John Doe</span>
+              <span class="ml-3 text-xl font-bold">Mohd Purwadi</span>
             </div>
             <p class="mt-4 text-gray-400 max-w-md">
               Full-stack web developer creating modern, responsive, and
@@ -896,9 +860,9 @@
               </a>
             </div>
             <div class="text-gray-400">
-              <p><i class="fas fa-envelope mr-2"></i> john.doe@example.com</p>
+              <p><i class="fas fa-envelope mr-2"></i> mohdpruwadi@gmail.com</p>
               <p class="mt-2">
-                <i class="fas fa-phone mr-2"></i> +1 (123) 456-7890
+                <i class="fas fa-phone mr-2"></i> 0813 6503 6634
               </p>
             </div>
           </div>
@@ -907,84 +871,10 @@
         <div
           class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400"
         >
-          <p>&copy; 2023 John Doe. All rights reserved.</p>
+          <p>&copy; 2023 Mohd Purwadi. All rights reserved.</p>
         </div>
       </div>
     </footer>
-
-    <script>
-      // Mobile menu toggle
-      const mobileMenuButton = document.getElementById("mobile-menu-button");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      mobileMenuButton.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-
-      // Smooth scrolling for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          if (targetId === "#") return;
-
-          const targetElement = document.querySelector(targetId);
-          if (targetElement) {
-            targetElement.scrollIntoView({
-              behavior: "smooth",
-            });
-
-            // Close mobile menu if open
-            if (!mobileMenu.classList.contains("hidden")) {
-              mobileMenu.classList.add("hidden");
-            }
-          }
-        });
-      });
-
-      // Form submission
-      const contactForm = document.getElementById("contact-form");
-      if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-          e.preventDefault();
-
-          // Get form values
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const subject = document.getElementById("subject").value;
-          const message = document.getElementById("message").value;
-
-          // Here you would typically send the form data to a server
-          // For this example, we'll just show a success message
-          alert(
-            `Thank you, ${name}! Your message has been sent. I'll get back to you soon.`
-          );
-
-          // Reset form
-          contactForm.reset();
-        });
-      }
-
-      // Animate elements when they come into view
-      const observerOptions = {
-        threshold: 0.1,
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fadeIn");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-
-      document
-        .querySelectorAll(".skill-card, .project-card, .timeline-item")
-        .forEach((el) => {
-          observer.observe(el);
-        });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,35 @@
+.hero-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.project-card:hover {
+  transform: scale(1.02);
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #4f46e5;
+  transition: width 0.3s ease;
+}
+.nav-link:hover:after {
+  width: 100%;
+}
+.timeline-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 30px;
+  height: calc(100% - 30px);
+  width: 2px;
+  background: #e5e7eb;
+}
